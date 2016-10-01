@@ -1,0 +1,19 @@
+{
+  "name": "wod",
+  "authors": [
+    " <>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "wod"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "repository": "",
+  "private": true,
+  "dependencies": {
+    "angular":"latest","font-awesome":"latest"
+  }
+}

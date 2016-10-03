@@ -1,0 +1,18 @@
+<div>
+  <h2>WEREWOLF</h2>
+  <form name="formWolf">
+    <label>Nome</label>
+    <input type="text" ng-model="wolf.name" name="name">
+    <br>
+    <label>Personagem</label>
+    <input type="text" ng-model="wolf.person" name="person">
+    <br>
+    <label>Clã</label>
+    <input type="text" ng-model="wolf.clan" name="clan">
+    <br>
+    <label>Peculiaridade</label>
+    <input type="text" ng-model="wolf.quirk" name="quirk">
+    <br>
+    <button ng-click="addSheet()" ng-disabled="formWolf.$invalid" type="submit">Salvar</button>
+  </form>
+</div>

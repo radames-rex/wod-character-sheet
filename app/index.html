@@ -9,9 +9,27 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
   </head>
-  <body>
-    <h1>Olá, !</h1>
+  <body ng-app='wodApp'>
+    <h1>RPG World of Darkness</h1>
+    <h2>Character Sheet</h2>
+    <div ng-view></div>
+    <div ng-controller="worldCtrl">
+      <!-- <button ng-click="generate()">Gerar Mundo</button> -->
+      <table>
+        <tr ng-repeat="sheet in sheets">
+          <td>{{sheet.name}}</td>
+          <td>{{sheet.person}}</td>
+          <td>{{sheet.clan}}</td>
+          <td>{{sheet.quirk}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Scripts -->
     <script src="libraries/angular/angular.min.js"></script>
-    <script src="js/main.js" asyn defer></script>
+    <script src="libraries/angular-route/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="components/vampire.ctrl.js"></script>
+    <script src="components/werewolf.ctrl.js"></script>
   </body>
 </html>

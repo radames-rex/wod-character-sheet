@@ -9,13 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "latest",
-    "gulp-util": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-util": "latest",
     "jshint": "latest",
-    "gulp-jshint": "latest",
-    "gulp-concat": "latest",
-    "gulp-rename": "latest",
-    "gulp-uglifycss": "latest",
-    "gulp-watch": "latest"
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-rename": "latest",
+    "grunt-contrib-uglifycss": "latest",
+    "grunt-contrib-watch": "latest"
   }
 }

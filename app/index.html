@@ -2,34 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="Keywords" content="">
+    <meta name="Keywords" content="world of darkness, vampire, wolf, mage, rpg, d10, d20, game, character sheet, mobile">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>wod | v0.1.0</title>
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
   </head>
   <body ng-app='wodApp'>
     <h1>RPG World of Darkness</h1>
     <h2>Character Sheet</h2>
     <div ng-view></div>
-    <div ng-controller="worldCtrl">
-      <!-- <button ng-click="generate()">Gerar Mundo</button> -->
-      <table>
-        <tr ng-repeat="sheet in sheets">
-          <td>{{sheet.name}}</td>
-          <td>{{sheet.person}}</td>
-          <td>{{sheet.clan}}</td>
-          <td>{{sheet.quirk}}</td>
-        </tr>
-      </table>
-    </div>
 
     <!-- Scripts -->
     <script src="libraries/angular/angular.min.js"></script>
     <script src="libraries/angular-route/angular-route.min.js"></script>
     <script src="app.js"></script>
-    <script src="components/vampire.ctrl.js"></script>
-    <script src="components/werewolf.ctrl.js"></script>
+    <script src="components/sheets/angel.ctrl.js"></script>
+    <script src="components/sheets/changeling.ctrl.js"></script>
+    <script src="components/sheets/demon.ctrl.js"></script>
+    <script src="components/sheets/hunter.ctrl.js"></script>
+    <script src="components/sheets/mage.ctrl.js"></script>
+    <script src="components/sheets/mummy.ctrl.js"></script>
+    <script src="components/sheets/vampire.ctrl.js"></script>
+    <script src="components/sheets/werewolf.ctrl.js"></script>
+    <script src="components/sheets/wraith.ctrl.js"></script>
   </body>
 </html>

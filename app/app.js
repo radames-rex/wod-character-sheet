@@ -2,11 +2,11 @@ angular.module('wodApp',['ngRoute'])
 angular.module('wodApp').config(function($routeProvider){
   $routeProvider
     .when('/vampire/:type',{
-      templateUrl: 'components/vampire.html',
+      templateUrl: 'components/sheets/vampire.html',
       controller: 'vampireCtrl'
     })
     .when('/wolf',{
-      templateUrl: 'components/werewolf.html',
+      templateUrl: 'components/sheets/werewolf.html',
       controller: 'werewolfCtrl'
     })
 })

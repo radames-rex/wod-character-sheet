@@ -1,0 +1,18 @@
+<div>
+  <h2>VAMPIRE</h2>
+  <form name="formVampire">
+    <label>Nome</label>
+    <input type="text" ng-model="vampire.name" name="name">
+    <br>
+    <label>Personagem</label>
+    <input type="text" ng-model="vampire.person" name="person">
+    <br>
+    <label>Clã</label>
+    <input type="text" ng-model="vampire.clan" name="clan">
+    <br>
+    <label>Peculiaridade</label>
+    <input type="text" ng-model="vampire.quirk" name="quirk">
+    <br>
+    <button ng-click="addSheet()" ng-disabled="formVampire.$invalid" type="submit">Salvar</button>
+  </form>
+</div>

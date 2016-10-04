@@ -1,4 +1,9 @@
-angular.module('wodApp',['ngRoute'])
+'use strict';
+
+angular.module('wodApp',[
+  'ngRoute',
+  'ngMaterial'
+])
 angular.module('wodApp').config(function($routeProvider){
   $routeProvider
     .when('/vampire',{
@@ -17,5 +22,4 @@ angular.module('wodApp').controller('worldCtrl', function($rootScope, $scope){
   $scope.sheets = [];
   $rootScope.sheets = [];
   $scope.sheets = $rootScope.sheets;
-
 })

@@ -9,6 +9,10 @@
 
 /*LAYOUT*/
 
+  .sheet{
+    display: flex;
+    flex-direction: column;
+  }
 /*MODULES*/
 
 /*STATES*/

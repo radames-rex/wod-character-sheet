@@ -13,6 +13,35 @@
     display: flex;
     flex-direction: column;
   }
+
+  md-toolbar.md-default-theme.md-hue-2:not(.md-menu-toolbar), md-toolbar.md-hue-2:not(.md-menu-toolbar){
+    background-color: #000;
+  }
+
+  .fabSpeedDialdemoBasicUsage .text-capitalize {
+    text-transform: capitalize; }
+
+  .fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+    background-color: #000 !important; }
+
+  .fabSpeedDialdemoBasicUsage p.note {
+    font-size: 1.2rem; }
+
+  .lock-size {
+    min-width: 300px;
+    min-height: 300px;
+    width: 300px;
+    height: 500px;
+    margin: auto 42px auto auto;
+  }
+
+  .md-button.md-default-theme.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-default-theme.md-primary.md-fab:not([disabled]):hover, .md-button.md-primary.md-fab:not([disabled]):hover{
+    background-color:  #000;
+  }
+
+  .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised, .md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab{
+    background-color: #000;
+  }
 /*MODULES*/
 
 /*STATES*/

@@ -7,11 +7,26 @@
     <title>wod | v0.1.0</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
   </head>
-  <body ng-app='wodApp'>
-    <h1>RPG World of Darkness</h1>
-    <h2>Character Sheet</h2>
+  <body ng-app='wodApp' ng-cloak>
+    <md-toolbar class="md-hue-2">
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+          <!-- <md-icon md-svg-icon="img/icons/menu.svg"></md-icon> -->
+        </md-button>
+        <h2>
+          <span>RPG World of Darkness - All Character Sheets</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <!-- <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon> -->
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+          <!-- <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon> -->
+        </md-button>
+      </div>
+    </md-toolbar>
+
     <div ng-view></div>
 
     <!-- Scripts -->

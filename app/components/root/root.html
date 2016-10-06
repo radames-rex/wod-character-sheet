@@ -1,0 +1,54 @@
+<md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings">
+            <md-icon md-svg-icon="images/svg/menu.svg"></md-icon>
+        </md-button>
+        <div>
+            <h2>
+                <img src="images/wod-banner.png" alt="the world of darkness" width="146px" height="35px"/>
+            </h2>
+        </div>
+        <span flex></span>
+    </div>
+</md-toolbar>
+
+<!-- <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Sidenav Left</h1>
+    </md-toolbar>
+    <md-content layout-padding ng-controller="LeftCtrl">
+    <md-content layout-padding>
+        <md-button ng-click="close()" class="md-primary" hide-gt-md>
+            Close Sidenav Left
+        </md-button>
+        <p hide show-gt-md>
+            This sidenav is locked open on your device. To go back to the default behavior, narrow your display.
+        </p>
+    </md-content>
+
+</md-sidenav> -->
+
+<section ui-view></section>
+
+<div class="menu">
+    <md-fab-speed-dial md-open="false" md-direction="up" class="md-fling">
+        <md-fab-trigger>
+            <md-button aria-label="menu" class="md-fab md-primary">
+                <md-icon md-svg-src="images/svg/menu.svg"></md-icon>
+            </md-button>
+        </md-fab-trigger>
+
+        <md-fab-actions>
+            <md-button aria-label="Collection" class="md-fab md-raised md-mini" ui-sref="wod.world">
+                <md-icon md-svg-src="images/svg/collection.svg" aria-label="Collection"></md-icon>
+            </md-button>
+            <md-button aria-label="Join" class="md-fab md-raised md-mini" ui-sref="wod.player">
+                <md-icon md-svg-src="images/svg/sheets.svg" aria-label="Join"></md-icon>
+            </md-button>
+            <md-button aria-label="Create" class="md-fab md-raised md-mini" ui-sref="wod.master">
+                <md-icon md-svg-src="images/svg/master.svg" aria-label="Create"></md-icon>
+            </md-button>
+        </md-fab-actions>
+    </md-fab-speed-dial>
+</div>

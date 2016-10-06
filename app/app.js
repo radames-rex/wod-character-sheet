@@ -1,51 +1,77 @@
 'use strict';
 
 angular.module('wodApp', [
-    'ngRoute',
-    'ngMaterial'
-]).config(function($routeProvider) {
-    $routeProvider
-        .when('/', {
-            templateUrl: 'components/sheets/wod.html',
-            controller: 'wodCtrl'
+    'ngMaterial',
+    'ui.router'
+]).config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+        .state('wod', {
+            abstract: true,
+            url: '/wod',
+            templateUrl: 'components/root/root.html',
         })
-        .when('/angel', {
+        .state('wod.world', {
+            url: '/world',
+            templateUrl: 'components/world/world.html',
+            controller: 'worldCtrl'
+        })
+        .state('wod.player', {
+            url: '/player',
+            templateUrl: 'components/world/player/player.html',
+            // controller: 'worldCtrl'
+        })
+        .state('wod.master', {
+            url: '/master',
+            templateUrl: 'components/world/master/master.html',
+            // controller: 'worldCtrl'
+        })
+        .state('wod.angel', {
+            url: '/angel',
             templateUrl: 'components/sheets/angel.html',
             controller: 'angelCtrl'
         })
-        .when('/changeling', {
+        .state('wod.changeling', {
+            url: '/changeling',
             templateUrl: 'components/sheets/changeling.html',
             controller: 'changelingCtrl'
         })
-        .when('/demon', {
+        .state('wod.demon', {
+            url: '/demon',
             templateUrl: 'components/sheets/demon.html',
             controller: 'demonCtrl'
         })
-        .when('/hunter', {
+        .state('wod.hunter', {
+            url: '/hunter',
             templateUrl: 'components/sheets/hunter.html',
             controller: 'hunterCtrl'
         })
-        .when('/mage', {
+        .state('wod.mage', {
+            url: '/mage',
             templateUrl: 'components/sheets/mage.html',
             controller: 'mageCtrl'
         })
-        .when('/mummy', {
+        .state('wod.mummy', {
+            url: '/mummy',
             templateUrl: 'components/sheets/mummy.html',
             controller: 'mummyCtrl'
         })
-        .when('/vampire', {
+        .state('wod.vampire', {
+            url: '/vampire',
             templateUrl: 'components/sheets/vampire.html',
             controller: 'vampireCtrl'
         })
-        .when('/wolf', {
+        .state('wod.wolf', {
+            url: '/wolf',
             templateUrl: 'components/sheets/werewolf.html',
             controller: 'werewolfCtrl'
         })
-        .when('/wraith', {
+        .state('wod.wraith', {
+            url: '/wraith',
             templateUrl: 'components/sheets/wraith.html',
             controller: 'wraithCtrl'
-        })
-        .otherwise({
-            redirectTo: '/'
+        });
+
+        $urlRouterProvider.otherwise(function () {
+          return '/wod/world';
         });
 });

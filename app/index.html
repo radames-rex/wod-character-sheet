@@ -10,47 +10,18 @@
         <link rel="stylesheet" href="styles/app.css">
     </head>
     <body ng-app='wodApp' ng-cloak>
-        <md-toolbar class="md-hue-2">
-            <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" aria-label="Settings">
-                    <md-icon md-svg-icon="images/svg/menu.svg"></md-icon>
-                </md-button>
-                <div>
-                    <h2>
-                        <img src="images/wod-banner.png" alt="the world of darkness" width="146px" height="35px"/>
-                    </h2>
-                </div>
-                <span flex></span>
-            </div>
-        </md-toolbar>
 
-        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
-
-            <md-toolbar class="md-theme-indigo">
-                <h1 class="md-toolbar-tools">Sidenav Left</h1>
-            </md-toolbar>
-            <md-content layout-padding ng-controller="LeftCtrl">
-                <md-button ng-click="close()" class="md-primary" hide-gt-md>
-                    Close Sidenav Left
-                </md-button>
-                <p hide show-gt-md>
-                    This sidenav is locked open on your device. To go back to the default behavior, narrow your display.
-                </p>
-            </md-content>
-
-        </md-sidenav>
-
-        <div ng-view></div>
+        <ui-view></ui-view>
 
         <!-- Scripts -->
         <script src="libraries/angular/angular.min.js"></script>
-        <script src="libraries/angular-route/angular-route.min.js"></script>
+        <script src="libraries/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="libraries/angular-animate/angular-animate.min.js"></script>
         <script src="libraries/angular-aria/angular-aria.min.js"></script>
         <script src="libraries/angular-messages/angular-messages.min.js"></script>
         <script src="libraries/angular-material/angular-material.min.js"></script>
         <script src="app.js"></script>
-        <script src="components/sheets/wod.ctrl.js"></script>
+        <script src="components/world/world.ctrl.js"></script>
         <script src="components/sheets/angel.ctrl.js"></script>
         <script src="components/sheets/changeling.ctrl.js"></script>
         <script src="components/sheets/demon.ctrl.js"></script>
